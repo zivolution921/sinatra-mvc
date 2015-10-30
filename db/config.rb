@@ -15,9 +15,9 @@ DB_NAME = APP_NAME + "_development.db"
 
 TEST_DB_NAME = APP_NAME + "_test.db"
 
-DB_USERNAME = 'ziv921'
+DB_USERNAME = 'zivzamechek'
 
-DB_PASSWORD = 'Zamechek921'
+DB_PASSWORD = ''
 
 if ENV['DEBUG']
   ActiveRecord::Base.logger = Logger.new(STDOUT)
