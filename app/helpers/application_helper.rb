@@ -7,12 +7,13 @@ module ApplicationHelper
 		end
 		@method
 	end
-	
+
 	def people_form_action(person)
 		if person.new_record?
-			@method = "post"
+			@action = "/people/"
 		else
-			@method = "put"
+			@action = "/people/person.id"
 		end
-		@method
+		@action
+	end
 end
