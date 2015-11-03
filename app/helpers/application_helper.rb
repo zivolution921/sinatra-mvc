@@ -10,9 +10,9 @@ module ApplicationHelper
 
 	def people_form_action(person)
 		if person.new_record?
-			@action = "/people/"
+			@action = "/people/#{person.id}"
 		else
-			@action = "/people/person.id"
+			@action = "/people/#{person.id}"
 		end
 		@action
 	end
